@@ -1,0 +1,9 @@
+databases:
+  maindb:
+    url: postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable
+    logging:
+      level: error
+web:
+  allowedOrigins:
+    - '*'
+  port: 8080
