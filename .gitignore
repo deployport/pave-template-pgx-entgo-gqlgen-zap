@@ -1,6 +1,6 @@
 go.sum
 vendor
-mainprocess
-mainprocess-config.yaml
+/mainprocess
+/mainprocess-config.yaml
 /.data
 go.work*
