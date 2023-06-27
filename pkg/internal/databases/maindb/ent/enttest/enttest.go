@@ -5,12 +5,12 @@ package enttest
 import (
 	"context"
 
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent"
 	// required by schema hooks.
-	_ "github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/runtime"
+	_ "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/migrate"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/migrate"
 )
 
 type (

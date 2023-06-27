@@ -6,7 +6,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent"
 )
 
 // The ProductFunc type is an adapter to allow the use of ordinary

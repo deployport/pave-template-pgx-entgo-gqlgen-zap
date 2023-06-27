@@ -3,10 +3,10 @@ package maindb
 import (
 	"context"
 
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/migrations"
 	dbcmd "github.com/deployport/pavement/commands/database"
 	"github.com/deployport/pavement/logging"
 	sqlconfig "github.com/deployport/pavement/sql/config"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/migrations"
 	"github.com/spf13/cobra"
 )
 

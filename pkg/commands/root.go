@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
+	dbcmd "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/databases"
+	webcmd "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/web"
 	configcmd "github.com/deployport/pavement/commands/config"
 	"github.com/deployport/pavement/logging"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/configurations"
-	dbcmd "github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/commands/databases"
-	webcmd "github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/commands/web"
 	"github.com/spf13/cobra"
 )
 
@@ -50,7 +50,7 @@ func run(ctx context.Context) error {
 
 	rootCmd.AddCommand(dbcmd.BuildRootCommand(ctx, &rootConfig.C.Databases, logger))
 	rootCmd.AddCommand(configcmd.Root(ctx, configcmd.RootParams[configurations.Config]{
-		BackedConfig:         rootConfig,
+		BackedConfig: rootConfig,
 		InitFilename: mainProcessConfigFilename,
 	}))
 

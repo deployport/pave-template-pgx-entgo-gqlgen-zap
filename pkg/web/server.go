@@ -7,13 +7,13 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/handler"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb"
 	"github.com/deployport/pavement/logging"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/configurations"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb"
 
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/generated"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/implementation"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/implementation"
 	"github.com/rs/cors"
 	"go.uber.org/zap"
 )

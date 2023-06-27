@@ -12,7 +12,7 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/product"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/product"
 )
 
 // ent aliases to avoid import conflicts in user's code.

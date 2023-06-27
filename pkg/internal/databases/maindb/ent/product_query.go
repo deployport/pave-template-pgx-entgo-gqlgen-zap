@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/predicate"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/product"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/predicate"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/product"
 )
 
 // ProductQuery is the builder for querying Product entities.

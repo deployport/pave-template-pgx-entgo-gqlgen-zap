@@ -3,8 +3,8 @@ package web
 import (
 	"context"
 
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
 	"github.com/deployport/pavement/logging"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/configurations"
 	"github.com/spf13/cobra"
 )
 

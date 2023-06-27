@@ -1,9 +1,9 @@
 package configurations
 
 import (
+	dbconfigs "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/config"
+	webconfig "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/config"
 	loggingconfig "github.com/deployport/pavement/logging/config"
-	dbconfigs "github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/config"
-	webconfig "github.com/gitpushy/pave/cmd/pave/templates/pkg/web/config"
 )
 
 // Config is the configuration for the program

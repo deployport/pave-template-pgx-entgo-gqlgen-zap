@@ -7,8 +7,8 @@ package graph
 import (
 	"context"
 
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/generated"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/generated/model"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated/model"
 )
 
 // CreateProduct is the resolver for the createProduct field.

@@ -13,7 +13,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/generated/model"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -254,7 +254,7 @@ func (ec *executionContext) field_Mutation_createProduct_args(ctx context.Contex
 	var arg0 model.NewProductInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewProductInput2githubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐNewProductInput(ctx, tmp)
+		arg0, err = ec.unmarshalNNewProductInput2githubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐNewProductInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -344,7 +344,7 @@ func (ec *executionContext) _Mutation_createProduct(ctx context.Context, field g
 	}
 	res := resTmp.(*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createProduct(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -493,7 +493,7 @@ func (ec *executionContext) _Query_products(ctx context.Context, field graphql.C
 	}
 	res := resTmp.([]*model.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚕᚖgithubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProductᚄ(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚕᚖgithubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProductᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_products(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2984,16 +2984,16 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) unmarshalNNewProductInput2githubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐNewProductInput(ctx context.Context, v interface{}) (model.NewProductInput, error) {
+func (ec *executionContext) unmarshalNNewProductInput2githubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐNewProductInput(ctx context.Context, v interface{}) (model.NewProductInput, error) {
 	res, err := ec.unmarshalInputNewProductInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNProduct2githubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2githubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v model.Product) graphql.Marshaler {
 	return ec._Product(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProduct2ᚕᚖgithubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProductᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚕᚖgithubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProductᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Product) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -3017,7 +3017,7 @@ func (ec *executionContext) marshalNProduct2ᚕᚖgithubᚗcomᚋgitpushyᚋpave
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNProduct2ᚖgithubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx, sel, v[i])
+			ret[i] = ec.marshalNProduct2ᚖgithubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -3037,7 +3037,7 @@ func (ec *executionContext) marshalNProduct2ᚕᚖgithubᚗcomᚋgitpushyᚋpave
 	return ret
 }
 
-func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋgitpushyᚋpaveᚋcmdᚋpaveᚋtemplatesᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋdeployportᚋpaveᚑtemplateᚑpgxᚑentgoᚑgqlgenᚑzapᚋpkgᚋwebᚋgraphᚋgeneratedᚋmodelᚐProduct(ctx context.Context, sel ast.SelectionSet, v *model.Product) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")

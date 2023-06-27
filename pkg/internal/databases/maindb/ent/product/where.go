@@ -4,7 +4,7 @@ package product
 
 import (
 	"entgo.io/ent/dialect/sql"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/predicate"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/predicate"
 )
 
 // ID filters vertices based on their ID field.

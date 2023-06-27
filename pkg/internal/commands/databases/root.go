@@ -3,9 +3,9 @@ package databases
 import (
 	"context"
 
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/databases/maindb"
+	dbconfigs "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/config"
 	"github.com/deployport/pavement/logging"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/commands/databases/maindb"
-	dbconfigs "github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/config"
 	"github.com/spf13/cobra"
 )
 

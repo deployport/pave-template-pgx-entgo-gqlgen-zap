@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/predicate"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent/product"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/predicate"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent/product"
 )
 
 // ProductDelete is the builder for deleting a Product entity.
@@ -27,7 +27,7 @@ func (pd *ProductDelete) Where(ps ...predicate.Product) *ProductDelete {
 
 // Exec executes the deletion query and returns how many vertices were deleted.
 func (pd *ProductDelete) Exec(ctx context.Context) (int, error) {
-	return withHooks[int, ProductMutation](ctx, pd.sqlExec, pd.mutation, pd.hooks)
+	return withHooks(ctx, pd.sqlExec, pd.mutation, pd.hooks)
 }
 
 // ExecX is like Exec, but panics if an error occurs.

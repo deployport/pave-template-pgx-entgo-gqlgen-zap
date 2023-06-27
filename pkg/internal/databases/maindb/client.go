@@ -5,10 +5,10 @@ import (
 	"fmt"
 
 	entsql "entgo.io/ent/dialect/sql"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/migrations"
 	pavementsql "github.com/deployport/pavement/sql"
 	sqlconfig "github.com/deployport/pavement/sql/config"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/ent"
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/internal/databases/maindb/migrations"
 	_ "github.com/jackc/pgx/v5/stdlib" // register pgx driver
 	"go.uber.org/zap"
 )

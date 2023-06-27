@@ -3,7 +3,7 @@ package implementation
 import (
 	"context"
 
-	"github.com/gitpushy/pave/cmd/pave/templates/pkg/web/graph/generated/model"
+	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated/model"
 )
 
 // Products is the resolver for the products field
