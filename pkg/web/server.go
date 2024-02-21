@@ -9,7 +9,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb"
-	"github.com/deployport/pavement/logging"
+	"go.deployport.com/pavement/logging"
 
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/graph/generated"

@@ -4,10 +4,10 @@ import (
 	"context"
 
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/migrations"
-	dbcmd "github.com/deployport/pavement/commands/database"
-	"github.com/deployport/pavement/logging"
-	sqlconfig "github.com/deployport/pavement/sql/config"
 	"github.com/spf13/cobra"
+	dbcmd "go.deployport.com/pavement/commands/database"
+	"go.deployport.com/pavement/logging"
+	sqlconfig "go.deployport.com/pavement/sql/config"
 )
 
 // BuildRootCommand creates the root command

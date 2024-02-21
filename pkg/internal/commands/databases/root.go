@@ -5,8 +5,8 @@ import (
 
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/databases/maindb"
 	dbconfigs "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/config"
-	"github.com/deployport/pavement/logging"
 	"github.com/spf13/cobra"
+	"go.deployport.com/pavement/logging"
 )
 
 // BuildRootCommand creates the root command

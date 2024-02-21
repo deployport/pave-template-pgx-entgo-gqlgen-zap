@@ -7,9 +7,9 @@ import (
 	entsql "entgo.io/ent/dialect/sql"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/ent"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/maindb/migrations"
-	pavementsql "github.com/deployport/pavement/sql"
-	sqlconfig "github.com/deployport/pavement/sql/config"
 	_ "github.com/jackc/pgx/v5/stdlib" // register pgx driver
+	pavementsql "go.deployport.com/pavement/sql"
+	sqlconfig "go.deployport.com/pavement/sql/config"
 	"go.uber.org/zap"
 )
 

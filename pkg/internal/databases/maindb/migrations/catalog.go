@@ -3,9 +3,9 @@ package migrations
 import (
 	"embed"
 
-	sqlconfig "github.com/deployport/pavement/sql/config"
-	sqlmigrations "github.com/deployport/pavement/sql/migrations"
 	_ "github.com/golang-migrate/migrate/v4/database/postgres" // migrate for postgres
+	sqlconfig "go.deployport.com/pavement/sql/config"
+	sqlmigrations "go.deployport.com/pavement/sql/migrations"
 	"go.uber.org/zap"
 )
 

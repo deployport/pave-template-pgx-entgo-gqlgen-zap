@@ -9,9 +9,9 @@ import (
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
 	dbcmd "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/databases"
 	webcmd "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/commands/web"
-	configcmd "github.com/deployport/pavement/commands/config"
-	"github.com/deployport/pavement/logging"
 	"github.com/spf13/cobra"
+	configcmd "go.deployport.com/pavement/commands/config"
+	"go.deployport.com/pavement/logging"
 )
 
 var rootConfig = configurations.New()

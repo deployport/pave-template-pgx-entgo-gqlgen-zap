@@ -3,7 +3,7 @@ package configurations
 import (
 	_ "embed" // embed default config file
 
-	"github.com/deployport/pavement/config"
+	"go.deployport.com/pavement/config"
 )
 
 // default variable bytes loaded using embed

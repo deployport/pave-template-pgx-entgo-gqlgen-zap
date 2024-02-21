@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
-	"github.com/deployport/pavement/logging"
 	"github.com/spf13/cobra"
+	"go.deployport.com/pavement/logging"
 )
 
 // BuildRootCommand creates the root command

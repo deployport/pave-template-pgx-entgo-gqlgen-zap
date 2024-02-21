@@ -3,7 +3,7 @@ package configurations
 import (
 	dbconfigs "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/internal/databases/config"
 	webconfig "github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web/config"
-	loggingconfig "github.com/deployport/pavement/logging/config"
+	loggingconfig "go.deployport.com/pavement/logging/config"
 )
 
 // Config is the configuration for the program

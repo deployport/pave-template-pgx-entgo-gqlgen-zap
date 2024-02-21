@@ -6,11 +6,11 @@ require entgo.io/ent v0.12.3
 
 require (
 	github.com/99designs/gqlgen v0.17.34
-	github.com/deployport/pavement v0.1.0
 	github.com/golang-migrate/migrate/v4 v4.16.2
 	github.com/jackc/pgx/v5 v5.4.1
 	github.com/rs/cors v1.9.0
 	github.com/vektah/gqlparser/v2 v2.5.4
+	go.deployport.com/pavement v0.2.0
 	go.uber.org/zap v1.24.0
 )
 

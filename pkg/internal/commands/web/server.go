@@ -5,8 +5,8 @@ import (
 
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/configurations"
 	"github.com/deployport/pave-template-pgx-entgo-gqlgen-zap/pkg/web"
-	"github.com/deployport/pavement/logging"
 	"github.com/spf13/cobra"
+	"go.deployport.com/pavement/logging"
 )
 
 func serverCommand(
