@@ -2,6 +2,9 @@
 
 package model
 
+type Mutation struct {
+}
+
 type NewProductInput struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`
@@ -10,4 +13,7 @@ type NewProductInput struct {
 type Product struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`
+}
+
+type Query struct {
 }
